@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- Functional Programming (CS141)                                             --
--- Lab 4: User-defined types                                                  --
+-- Lab: Recursive data types                                                  --
 --------------------------------------------------------------------------------
 
 {-# LANGUAGE ScopedTypeVariables #-}
@@ -11,7 +11,7 @@ import Test.QuickCheck
 
 import Data.List (nub, sort)
 
-import qualified Lab4 as L
+import qualified Lab as L
 
 --------------------------------------------------------------------------------
 
