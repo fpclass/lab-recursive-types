@@ -1,5 +1,5 @@
 name:                lab-recursive-types
-version:             1.2.0.0
+version:             1.3.0.0
 -- synopsis:
 -- description:
 homepage:            https://github.com/fpclass/lab-recursive-types#readme
@@ -22,10 +22,15 @@ test-suite lab-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             Spec.hs
+  other-modules:       RedBlackSpec
   build-depends:
     base,
-    hspec,
-    QuickCheck,
+    tasty,
+    tasty-hunit,
+    tasty-quickcheck,
+    tasty-hedgehog,
+    tasty-ant-xml,
+    hedgehog,
     lab-recursive-types
   ghc-options:         -threaded -rtsopts
   default-language:    Haskell2010
