@@ -9,12 +9,13 @@ module Lab where
 -- Red-black trees
 
 data Colour = ???
+    deriving Eq
 
 instance Show Colour where
     show = undefined
 
 data Tree a = Leaf | ???
-    deriving Show
+    deriving (Eq, Show)
 
 empty :: Tree a
 empty = undefined
